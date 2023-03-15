@@ -74,7 +74,7 @@ class Config
      */
     private static function _initSetting()
     {
-        define('TFTP_HOST', "172.17.0.3");
+        define('TFTP_HOST', "10.10.10.2");
         define('TFTP_FTP_USERNAME', "fog");
         define(
             'TFTP_FTP_PASSWORD',
@@ -86,7 +86,7 @@ class Config
         define('USE_SLOPPY_NAME_LOOKUPS', true);
         define('MEMTEST_KERNEL', 'memtest.bin');
         define('PXE_IMAGE', 'init.xz');
-        define('STORAGE_HOST', "172.17.0.3");
+        define('STORAGE_HOST', "10.10.10.2");
         define('STORAGE_FTP_USERNAME', "fog");
         define(
             'STORAGE_FTP_PASSWORD',
@@ -97,8 +97,8 @@ class Config
         define('STORAGE_BANDWIDTHPATH', '/fog/status/bandwidth.php');
         define('STORAGE_INTERFACE', 'eth0');
         define('CAPTURERESIZEPCT', 5);
-        define('WEB_HOST', "172.17.0.3");
-        define('WOL_HOST', "172.17.0.3");
+        define('WEB_HOST', "10.10.10.2");
+        define('WOL_HOST', "10.10.10.2");
         define('WOL_PATH', '//fog/wol/wol.php');
         define('WOL_INTERFACE', "eth0");
         define('SNAPINDIR', "/opt/fog/snapins/");
