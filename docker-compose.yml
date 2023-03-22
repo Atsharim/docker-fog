@@ -8,6 +8,7 @@ services:
       MYSQL_PASSWORD: password
       MYSQL_DATABASE: fog
       MYSQL_ROOT_PASSWORD: password
+      IP: 10.10.10.2
     restart: always
     volumes:
       - db-data:/var/lib/mysql
@@ -21,8 +22,11 @@ services:
     links:
       - db
     ports:
-      - "80:80"
-      - "443:443"
+      - 80:80/tcp
+      - 443:443/tcp
+      - 69:69/udp
+      - 21:21/tcp
+      - 9000:9000/tcp
     tty: true
     volumes:
        - fog-images:/images
